@@ -52,7 +52,7 @@ def password_check(input_string):
             if i < 7:
                 if ord(input_string[i]) == (ord(input_string[i+1]) - 1): #Next letter is in increasing straight of this letter
                     has_straight_three = True
-        
+
         prev_letter = input_string[i]
 
     if len(pairs) >= 2:
@@ -70,7 +70,9 @@ if not input_string.isalpha():
     raise ValueError("Input is not a string of letters.")
 input_string = input_string.lower()
 
-while (not password_check(input_string)):
+#This while loop is guaranteed to terminate by finding a qualifying password, due to the aaaaaaaa-zzzzzzzz loop, as per the problem requirements.
+#A formal proof for the guarantee of termination is an exercise for the reader :)
+while (not password_check(input_string)): 
     input_string = increment(input_string)
 
 part_one_answer = input_string
