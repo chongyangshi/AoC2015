@@ -66,6 +66,8 @@ def password_check(input_string):
 
 
 input_string = raw_input("Enter puzzle input:")
+if len(input_string) != 8:
+    raise ValueError("Input is not of length 8.")
 if not input_string.isalpha():
     raise ValueError("Input is not a string of letters.")
 input_string = input_string.lower()
