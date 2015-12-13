@@ -9,8 +9,8 @@ def intval(s):
     except ValueError:
         return False
 
-def process_gate(target):
-    global target_list, content, value_table
+def process_gate(target, content, target_list):
+    global value_table
 
     if intval(target):
         return int(target)
@@ -25,7 +25,7 @@ def process_gate(target):
             value_table[input_exploded[-1]] = result
             return result #number
         else:
-            result = process_gate(input_exploded[0])
+            result = process_gate(input_exploded[0], content, target_list)
             value_table[input_exploded[-1]] = result
             return result #another wire
 
@@ -33,7 +33,7 @@ def process_gate(target):
         if input_exploded[1] in value_table:
             return ~value_table(input_exploded[1])
         else:
-            result = ~process_gate(input_exploded[1])
+            result = ~process_gate(input_exploded[1], content, target_list)
             value_table[input_exploded[-1]] = result
             return result
 
@@ -42,12 +42,12 @@ def process_gate(target):
         if input_exploded[0] in value_table:
             left = value_table[input_exploded[0]]
         else:
-            left = process_gate(input_exploded[0])
+            left = process_gate(input_exploded[0], content, target_list)
 
         if input_exploded[2] in value_table:
             right = value_table[input_exploded[2]]
         else:
-            right = process_gate(input_exploded[2])
+            right = process_gate(input_exploded[2], content, target_list)
         result = left & right
         value_table[input_exploded[-1]] = result
         return result
@@ -57,12 +57,12 @@ def process_gate(target):
         if input_exploded[0] in value_table:
             left = value_table[input_exploded[0]]
         else:
-            left = process_gate(input_exploded[0])
+            left = process_gate(input_exploded[0], content, target_list)
 
         if input_exploded[2] in value_table:
             right = value_table[input_exploded[2]]
         else:
-            right = process_gate(input_exploded[2])
+            right = process_gate(input_exploded[2], content, target_list)
         result = left | right
         value_table[input_exploded[-1]] = result
         return result
@@ -72,7 +72,7 @@ def process_gate(target):
             if input_exploded[2] in value_table:
                 return value_table[input_exploded[2]] << int(input_exploded[2])
             else:
-                result = process_gate(input_exploded[0]) << int(input_exploded[2])
+                result = process_gate(input_exploded[0], content, target_list) << int(input_exploded[2])
                 value_table[input_exploded[-1]] = result
                 return result
         else:
@@ -83,7 +83,7 @@ def process_gate(target):
             if input_exploded[2] in value_table:
                 return value_table[input_exploded[2]] >> int(input_exploded[2])
             else:
-                result = process_gate(input_exploded[0]) >> int(input_exploded[2])
+                result = process_gate(input_exploded[0], content, target_list) >> int(input_exploded[2])
                 value_table[input_exploded[-1]] = result
                 return result
         else:
@@ -107,11 +107,11 @@ if target_list[-1] == '':
     content = content[:-1]
     #strip last empty line if present
 
-part_one_result = process_gate("a")
+part_one_result = process_gate("a", content, target_list)
 print "Result for Part One: ",part_one_result
 
 content[target_list.index("b")] = str(part_one_result) + " -> b"
 value_table = {} #reset lookup table
-part_two_result = process_gate("a")
+part_two_result = process_gate("a", content, target_list)
 print "Result for Part Two: ",part_two_result
 
