@@ -27,8 +27,8 @@ with open('reindeer.txt') as f:
 
 reindeers = []
 for reindeer in content:
-	line = reindeer.split(' ')
-	reindeers.append([line[0], int(line[3]), int(line[6]), int(line[13])])
+    line = reindeer.split(' ')
+    reindeers.append([line[0], int(line[3]), int(line[6]), int(line[13])])
 
 #Part One
 fly_time = 2503
