@@ -1,6 +1,6 @@
 #Advent of Code December 13
 #Written by icydoge - icydoge AT gmail dot com
-#Again with brute force through all permutations, maybe there's an alteration to Hungarian Algorithm to work this better.
+#I changed from a TSP(Day9)-adapted solution to brute force due to debugging an unrelated isssue, therefore brute force searching is used for this solution. The same algorithm in Day 9 can be applied here with minimum adaptation.
 
 import itertools
 
