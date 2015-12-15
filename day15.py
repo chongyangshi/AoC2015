@@ -40,7 +40,8 @@ for a in range(0, 101):
 #Part One
 part_one_answer = max(scores)
 print "Maximum possible score (Part One):", part_one_answer
-extension
+
+
 #Part Two
 best_500_calories_score = -1
 
