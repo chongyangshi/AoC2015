@@ -5,23 +5,23 @@
 #Might come back to this later, but brute force is the best I can write 
 #with limited time today, without consulting other solutions.
 
-def calc(a, b, c, d, ingradients):
+def calc(a, b, c, d, ingredients):
     #Calculate the score
-    capacity = max(0, ingradients[0][1] * a + ingradients[1][1] * b + ingradients[2][1] * c + ingradients[3][1] * d)
-    durability = max(0, ingradients[0][2] * a + ingradients[1][2] * b + ingradients[2][2] * c + ingradients[3][2] * d)
-    flavour = max(0, ingradients[0][3] * a + ingradients[1][3] * b + ingradients[2][3] * c + ingradients[3][3] * d)
-    texture = max(0, ingradients[0][4] * a + ingradients[1][4] * b + ingradients[2][4] * c + ingradients[3][4] * d)
-    calories = ingradients[0][5] * a + ingradients[1][5] * b + ingradients[2][5] * c + ingradients[3][5] * d
+    capacity = max(0, ingredients[0][1] * a + ingredients[1][1] * b + ingredients[2][1] * c + ingredients[3][1] * d)
+    durability = max(0, ingredients[0][2] * a + ingredients[1][2] * b + ingredients[2][2] * c + ingredients[3][2] * d)
+    flavour = max(0, ingredients[0][3] * a + ingredients[1][3] * b + ingredients[2][3] * c + ingredients[3][3] * d)
+    texture = max(0, ingredients[0][4] * a + ingredients[1][4] * b + ingredients[2][4] * c + ingredients[3][4] * d)
+    calories = ingredients[0][5] * a + ingredients[1][5] * b + ingredients[2][5] * c + ingredients[3][5] * d
     return [capacity * durability * flavour * texture, calories]
 
-with open('ingradients.txt') as f:
+with open('ingredients.txt') as f:
     content = f.read().splitlines()
 
-#Parse input into ingradients
-ingradients = []
+#Parse input into ingredients
+ingredients = []
 for item in content:
     line = item.split(' ')
-    ingradients.append([line[0][:-1], int(line[2][:-1]), int(line[4][:-1]), int(line[6][:-1]), int(line[8][:-1]), int(line[10])])
+    ingredients.append([line[0][:-1], int(line[2][:-1]), int(line[4][:-1]), int(line[6][:-1]), int(line[8][:-1]), int(line[10])])
 
 #Brute force score and calories calculation
 scores = []
@@ -30,7 +30,7 @@ for a in range(0, 101):
     for b in range(0, 101-a):
         for c in range(0, 101-a-b):
             for d in range(0, 101-a-b-c):
-                result = calc(a, b, c, d, ingradients)
+                result = calc(a, b, c, d, ingredients)
                 score = result[0]
                 if score != 0:
                     cookie_calories = result[1]
@@ -40,7 +40,7 @@ for a in range(0, 101):
 #Part One
 part_one_answer = max(scores)
 print "Maximum possible score (Part One):", part_one_answer
-
+extension
 #Part Two
 best_500_calories_score = -1
 
