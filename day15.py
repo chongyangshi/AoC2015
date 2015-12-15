@@ -29,13 +29,13 @@ calories = []
 for a in range(0, 101):
     for b in range(0, 101-a):
         for c in range(0, 101-a-b):
-            for d in range(0, 101-a-b-c):
-                result = calc(a, b, c, d, ingredients)
-                score = result[0]
-                if score != 0:
-                    cookie_calories = result[1]
-                    scores.append(score)
-                    calories.append(cookie_calories)
+            d = 100 - a - b - c
+            result = calc(a, b, c, d, ingredients)
+            score = result[0]
+            if score != 0:
+                cookie_calories = result[1]
+                scores.append(score)
+                calories.append(cookie_calories)
 
 #Part One
 part_one_answer = max(scores)
