@@ -52,7 +52,6 @@ def operation(lights, part):
             current_light = get_state(i, j, lights)
 
             #Set the new state of the light in new_arrangement.
-
             if current_light == LIGHT_ON:
 
                 if (neighbours.count(LIGHT_ON) == 2) or (neighbours.count(LIGHT_ON) == 3):
@@ -68,7 +67,6 @@ def operation(lights, part):
 
                 else:
                     new_arrangement[i][j] = LIGHT_OFF
-
 
     return new_arrangement
 
