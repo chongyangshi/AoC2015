@@ -14,7 +14,7 @@ def calc(a, b, c, d, ingredients):
     calories = ingredients[0][5] * a + ingredients[1][5] * b + ingredients[2][5] * c + ingredients[3][5] * d
     return [capacity * durability * flavour * texture, calories]
 
-with open('ingredients.txt') as f:
+with open('inputs/ingredients.txt') as f:
     content = f.read().splitlines()
 
 #Parse input into ingredients

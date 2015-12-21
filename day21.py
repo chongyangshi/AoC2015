@@ -17,7 +17,7 @@ def get_damage(attacker_damage, defender_armor):
     return damage
 
 
-with open('rpg.txt') as f:
+with open('inputs/rpg.txt') as f:
     content = f.read().splitlines()
 
 boss_HP = int(content[0].split(' ')[2])

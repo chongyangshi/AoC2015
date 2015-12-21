@@ -1,7 +1,7 @@
 #Advent of Code December 3
 #Written by icydoge - icydoge AT gmail dot com
 
-with open('directions.txt') as f:
+with open('inputs/directions.txt') as f:
     content = f.read()[:-1] #remove new line character at the end
 
 route = list(content)

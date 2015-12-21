@@ -3,7 +3,7 @@
 
 from itertools import combinations
 
-with open('containers.txt') as f:
+with open('inputs/containers.txt') as f:
     content = sorted(map(int,f.read().splitlines()))
 
 min_comb = 150 / max(content)  #At least this many containers needed achieve 150.

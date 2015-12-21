@@ -42,7 +42,7 @@ def json_sum(JSONData, exclude_red):
         return sum_value
 
 
-with open('accounting.json') as JSONFile:
+with open('inputs/accounting.json') as JSONFile:
     JSONData = json.load(JSONFile)
 
 part_one_result = json_sum(JSONData, False)

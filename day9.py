@@ -52,7 +52,7 @@ def get_route_distance(distance_map, route):
         distance += int(distance_map[route[i]][route[i+1]])
     return [route, distance]
 
-with open('routes.txt') as f:
+with open('inputs/routes.txt') as f:
     content = f.read().splitlines()[:-1]
 
 #Construct the table

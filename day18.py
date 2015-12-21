@@ -71,7 +71,7 @@ def operation(lights, part):
     return new_arrangement
 
 
-with open('lights_2.txt') as f:
+with open('inputs/lights_2.txt') as f:
     content = f.read().splitlines()
 
 

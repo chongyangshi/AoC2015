@@ -1,7 +1,7 @@
 #Advent of Code December 16
 #Written by icydoge - icydoge AT gmail dot com
 
-with open('aunt_matching.txt') as fi:
+with open('inputs/aunt_matching.txt') as fi:
     content = fi.read().splitlines()
 
 properties = {}
@@ -10,7 +10,7 @@ for item in content:
     line = item.split(' ')
     properties[line[0][:-1]] = int(line[1])
 
-with open('aunts.txt') as f:
+with open('inputs/aunts.txt') as f:
     content = f.read().splitlines()
 
 

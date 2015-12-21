@@ -26,7 +26,7 @@ def get_plan_happiness(happiness_map, seating_plan):
     return happiness
 
 
-with open('table.txt') as f:
+with open('inputs/table.txt') as f:
     content = f.read().splitlines()
 
 #Part One

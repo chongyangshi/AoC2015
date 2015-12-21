@@ -1,7 +1,7 @@
 #Advent of Code December 8
 #Written by icydoge - icydoge AT gmail dot com
 
-with open('strings.txt') as f:
+with open('inputs/strings.txt') as f:
     content = f.read().splitlines()[:-1]
 
 content_for_encode = content 

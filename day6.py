@@ -2,7 +2,7 @@
 #Written by icydoge - icydoge AT gmail dot com
 #Dumb and ugly code, be aware
 
-with open('lights.txt') as f:
+with open('inputs/lights.txt') as f:
     content = f.read().splitlines()[:-1]
 
 lights = [[0 for i in range(1000)] for i in range(1000)]

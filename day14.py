@@ -22,7 +22,7 @@ def look_up_reindeer(name, reindeers):
         if reindeer[0] == name:
             return reindeers.index(reindeer)
 
-with open('reindeer.txt') as f:
+with open('inputs/reindeer.txt') as f:
     content = f.read().splitlines()
 
 reindeers = []

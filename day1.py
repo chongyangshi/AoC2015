@@ -1,7 +1,7 @@
 #Advent of Code December 1
 #Written by icydoge - icydoge AT gmail dot com
 
-with open('floor.txt') as f:
+with open('inputs/floor.txt') as f:
     content = f.read()
 
 floors = list(content)

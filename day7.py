@@ -95,7 +95,7 @@ def process_gate(target, content, target_list):
 target_list = []
 value_table = {}
 
-with open('puzzle.txt') as f:
+with open('inputs/puzzle.txt') as f:
     content = f.read().splitlines()
 
 for i in range(0,len(content)):

@@ -14,7 +14,7 @@ def get_all_indices(input_string, search_string, offset):
     return [index]+(get_all_indices(input_string[(index+len(search_string)-offset):], search_string, index+len(search_string)))
 
 
-with open('molecules.txt') as f:
+with open('inputs/molecules.txt') as f:
     content = f.read().splitlines()
 
 #Separate replacement table and medicine molecule

@@ -9,7 +9,7 @@ def get_all_indices(input_string, search_string, offset):
         return []
     return [index]+(get_all_indices(input_string[(index+len(search_string)-offset):], search_string, index+len(search_string)))
 
-with open('naughty-nice-strings.txt') as f:
+with open('inputs/naughty-nice-strings.txt') as f:
     content = f.read().splitlines()
 
 nice_strings = []
