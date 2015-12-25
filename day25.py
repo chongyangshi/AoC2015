@@ -12,7 +12,6 @@ row_number = 2
 col_number = 1 #Start from (2,1) due to Python not having do while.
 diagonal_width = 2
 current_width = 1
-prev_code = 0
 
 while True:
 
