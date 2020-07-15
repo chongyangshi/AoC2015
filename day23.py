@@ -1,5 +1,5 @@
 #Advent of Code December 23
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #Thanks, Freeman.
 
 

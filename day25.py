@@ -1,5 +1,5 @@
 #Advent of Code December 25
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 with open('inputs/machine.txt') as f:
     content = f.read().splitlines()[0].split(' ')

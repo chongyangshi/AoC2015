@@ -1,5 +1,5 @@
 #Advent of Code December 8
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 with open('inputs/strings.txt') as f:
     content = f.read().splitlines()[:-1]

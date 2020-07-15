@@ -1,5 +1,5 @@
 #Advent of Code December 22
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #Note: this is not a solution, but only the user-facing game simulation that requires human inputs.
 #I played this game manually for around 25 minutes and found the lowest mana spent for Part One,  
 #and the immediately higher rotation turned out to the the solution to Part Two.

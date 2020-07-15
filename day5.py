@@ -1,5 +1,5 @@
 #Advent of Code December 5
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 def get_all_indices(input_string, search_string, offset):
     #Get all indices of the appearance of search_string in input_string

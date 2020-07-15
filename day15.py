@@ -1,5 +1,5 @@
 #Advent of Code December 15
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #Trust me, this is exactly not the way I want to do it.
 #However, I am short on time today, and an attempt with scipy.optimize has failed.
 #Might come back to this later, but brute force is the best I can write 

@@ -1,5 +1,5 @@
 #Advent of Code December 16
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 with open('inputs/aunt_matching.txt') as fi:
     content = fi.read().splitlines()

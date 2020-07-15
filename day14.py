@@ -1,5 +1,5 @@
 #Advent of Code December 14
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 def reindeer_fly(reindeer, time):
     #Give the distance the reindeer covered until that time

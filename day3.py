@@ -1,5 +1,5 @@
 #Advent of Code December 3
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 with open('inputs/directions.txt') as f:
     content = f.read()[:-1] #remove new line character at the end

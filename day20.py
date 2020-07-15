@@ -1,5 +1,5 @@
 #Advent of Code December 20
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #My input: 33100000
 
 #Efficient get-all-factors courtesy of http://stackoverflow.com/a/6800214/5693062

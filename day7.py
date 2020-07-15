@@ -1,5 +1,5 @@
 #Advent of Code December 7, with dynamic planning
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #Updated to include result for Part Two.
 
 def intval(s):

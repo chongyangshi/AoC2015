@@ -1,5 +1,5 @@
 #Advent of Code December 24
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 from operator import mul
 from itertools import combinations

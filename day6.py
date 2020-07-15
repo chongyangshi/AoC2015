@@ -1,5 +1,5 @@
 #Advent of Code December 6
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 #Dumb and ugly code, be aware
 
 with open('inputs/lights.txt') as f:

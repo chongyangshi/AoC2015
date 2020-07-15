@@ -1,5 +1,5 @@
 #Advent of Code December 2
-#Written by icydoge - icydoge AT gmail dot com
+#Written by C Shi - icydoge AT gmail dot com
 
 with open('inputs/paper.txt') as f:
     content = f.read().splitlines()[:-1] #Remove last empty line
